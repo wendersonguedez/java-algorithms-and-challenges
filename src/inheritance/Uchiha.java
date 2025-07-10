@@ -1,4 +1,24 @@
 package inheritance;
 
-public class Uchiha {
+import java.text.MessageFormat;
+
+public class Uchiha extends Ninja {
+
+    String specialAbility;
+
+    public String showSpecialAbility() {
+        return this.specialAbility;
+    }
+
+    @Override
+    public void showInformations() {
+        System.out.println(MessageFormat.format("Nome: {0}", name));
+        System.out.println(MessageFormat.format("Missão: {0}", mission));
+        System.out.println(MessageFormat.format("Nível de Dificuldade: {0}", difficultyLevel));
+        System.out.println(MessageFormat.format("Status da Missão: {0}", missionStatus));
+        System.out.println(MessageFormat.format("Idade: {0}", age));
+        System.out.println(MessageFormat.format("Habilidade especial: {0}", this.specialAbility));
+
+    }
+
 }
