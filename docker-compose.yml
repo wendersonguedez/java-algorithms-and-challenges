@@ -1,0 +1,10 @@
+services:
+  basic-java-challenges: # nome do serviço para ser usado pelo docker compose
+    build: .
+    container_name: basic-java-challenges
+    # Mapeia a pasta atual (.) do seu PC para a pasta /app do container
+    volumes:
+      - .:/app
+    # (Opcional) Se precisar expor porta para web no futuro, descomente:
+    # ports:
+    #   - "8080:8080"
