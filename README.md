@@ -1,66 +1,101 @@
-# Basic Java Challenges ☕
+# 🧩 Java Algorithms & Challenges
 
-Repositório destinado ao estudo de lógica de programação, algoritmos e fundamentos da linguagem Java.
+Repositório dedicado à prática de **algoritmos**, **estruturas de dados** e **resolução de problemas** em Java — com foco em raciocínio computacional e escrita de código idiomático.
 
-O objetivo é resolver desafios básicos e práticos, focando na sintaxe e nas estruturas de dados da linguagem, mantendo um ambiente de desenvolvimento limpo e isolado.
+O objetivo não é acumular soluções, mas desenvolver a capacidade de analisar um problema, identificar a estrutura de dados adequada e implementar uma solução eficiente e legível.
 
-## 🚀 Tecnologias
+## 📂 Estrutura do Repositório
 
-- **Java 17** (OpenJDK / Eclipse Temurin)
-- **Docker & Docker Compose** (para ambiente de execução)
+```
+java-algorithms-and-challenges/
+└── src/
+    ├── logic/               # Desafios de lógica e raciocínio algorítmico
+    ├── data_structures/     # Implementações do zero: pilhas, filas, listas, árvores, grafos
+    └── leetcode/            # Problemas do LeetCode organizados por categoria
+        ├── arrays/
+        ├── strings/
+        ├── linked_lists/
+        ├── trees/
+        ├── dynamic_programming/
+        └── ...
+```
 
-## 🐳 Por que Docker?
+Cada solução tem comentários explicando a abordagem escolhida e a complexidade de tempo e espaço.
 
-Para evitar problemas comuns como "na minha máquina funciona" ou conflitos entre diferentes versões do JDK instaladas no sistema operacional, este projeto foi configurado para rodar inteiramente dentro de um container Docker.
+## 📊 Complexidade — O que analiso em cada solução
 
-Isso garante que:
-1. Não é necessário instalar o Java no seu computador local.
-2. O ambiente é leve (Alpine Linux) e descartável.
-3. Você pode editar o código na sua IDE favorita e rodar o resultado instantaneamente no container.
+| Notação | Nome | Exemplo |
+|---|---|---|
+| O(1) | Constante | Acesso por índice em array |
+| O(log n) | Logarítmica | Busca binária |
+| O(n) | Linear | Percorrer uma lista |
+| O(n log n) | Linearítmica | Merge sort |
+| O(n²) | Quadrática | Bubble sort, força bruta com dois loops |
 
-## 🛠️ Como executar
+## 🏗️ Estruturas de Dados (implementadas do zero)
 
-### 1. Subindo o ambiente
-Na raiz do projeto, execute o comando abaixo para construir e iniciar o container em segundo plano:
+| Estrutura | Status |
+|---|---|
+| Array dinâmico | ⏳ |
+| Stack (Pilha) | ⏳ |
+| Queue (Fila) | ⏳ |
+| Linked List | ⏳ |
+| Binary Search Tree | ⏳ |
+| Hash Map | ⏳ |
+| Graph | ⏳ |
+
+> Implementar do zero antes de usar as versões da JDK é a forma mais eficaz de entender o custo real de cada operação.
+
+## 🔢 LeetCode — Progresso por Categoria
+
+| Categoria | Resolvidos |
+|---|---|
+| Arrays & Hashing | 0 |
+| Two Pointers | 0 |
+| Sliding Window | 0 |
+| Stack | 0 |
+| Binary Search | 0 |
+| Linked List | 0 |
+| Trees | 0 |
+| Dynamic Programming | 0 |
+
+## 🚀 Como Executar
+
+Pré-requisito: **JDK 17+** instalado.
+
+```bash
+# Compilar
+javac src/logic/NomeDoDesafio.java
+
+# Executar
+java -cp src logic.NomeDoDesafio
+```
+
+O ambiente também está configurado com **Docker** para rodar qualquer solução sem instalar Java localmente:
 
 ```bash
 docker compose up -d
+docker exec -it java-challenges java src/logic/NomeDoDesafio.java
 ```
 
-### 2. Rodando os códigos (modo recomendado)
+## 📚 Referências
 
-Para ter uma experiência fluida (com autocomplete funcionando no terminal), recomendo "entrar" no container e executar os comandos de lá.
+| Material | Foco |
+|---|---|
+| *Introduction to Algorithms* — CLRS | Fundação teórica de algoritmos e estruturas de dados |
+| [NeetCode.io](https://neetcode.io) | Roadmap de LeetCode organizado por padrões |
+| [LeetCode](https://leetcode.com/wendersonguedez) | Plataforma de prática |
 
-1. Acesse o terminal interativo do container:
-    ```bash
-    docker exec -it basic-java-challenges sh
-    ```
-2. Agora, dentro do container, você pode navegar e executar os arquivos Java diretamente. O Tab funcionará para completar os caminhos:
-    ```bash
-    # Exemplo de execução
-    java src/fundamentals/difference/Difference.java
-    ```
-3. Para sair do container, basta digitar exit.
+## 🔗 Outros Repositórios
 
-<hr/>
+| Repo | Descrição |
+|---|---|
+| [java-engineering-fundamentals](https://github.com/wendersonguedez/java-engineering-fundamentals) | Core Java, OOP, SOLID e fundamentos da linguagem |
+| [task-tracker-cli](https://github.com/wendersonguedez/task-tracker-cli) | Projeto prático: CLI de gerenciamento de tarefas em Java puro |
+| [gallery-plus](https://github.com/wendersonguedez/gallery-plus) | Projeto fullstack em TypeScript com deploy em produção (Railway) |
 
-#### Alternativa (comando único)
-Se preferir rodar apenas um arquivo sem entrar no container (o autocomplete do terminal pode não funcionar bem aqui):
-
-```bash
-docker exec -it basic-java-challenges java src/fundamentals/difference/Difference.java
-```
-<hr/>
-
-## 📂 Estrutura do Projeto
-
-Os arquivos fonte estão dentro da pasta `src`. Lembre-se que em Java, a estrutura de pastas deve seguir o nome do pacote (`package`).
-
-```text
-├── docker-compose.yml   # Configuração do serviço Docker
-├── Dockerfile           # Definição da imagem Java 17 Alpine
-└── src/
-    └── fundamentals/    # Exercícios de fundamentos
-        └── difference/
-            └── Difference.java
-```
+<p align="center">
+  <img src="https://img.shields.io/badge/Java-17-orange?style=flat-square&logo=openjdk&logoColor=white" />
+  <img src="https://img.shields.io/badge/LeetCode-Em%20progresso-yellow?style=flat-square&logo=leetcode&logoColor=white" />
+  <img src="https://img.shields.io/badge/Foco-DSA%20%26%20Problem%20Solving-informational?style=flat-square" />
+</p>
