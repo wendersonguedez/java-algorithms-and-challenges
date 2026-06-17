@@ -1,4 +1,4 @@
-package math.factorial;
+package algorithms.math.factorial;
 
 import java.util.Scanner;
 

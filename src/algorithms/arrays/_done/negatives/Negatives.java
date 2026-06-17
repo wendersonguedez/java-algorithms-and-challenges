@@ -1,4 +1,4 @@
-package arrays.negatives;
+package algorithms.arrays._done.negatives;
 
 import java.util.Scanner;
 

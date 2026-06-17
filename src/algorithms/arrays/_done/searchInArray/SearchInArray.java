@@ -1,4 +1,4 @@
-package arrays.searchInArray;
+package algorithms.arrays._done.searchInArray;
 
 public class SearchInArray {
     public static void main(String[] args) {

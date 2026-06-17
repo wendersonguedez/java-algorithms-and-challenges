@@ -1,4 +1,4 @@
-package arrays.sumOfElements;
+package algorithms.arrays._done.sumOfElements;
 
 import java.util.Scanner;
 

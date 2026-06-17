@@ -1,4 +1,4 @@
-package math.difference;
+package algorithms.math.difference;
 
 import java.util.Scanner;
 

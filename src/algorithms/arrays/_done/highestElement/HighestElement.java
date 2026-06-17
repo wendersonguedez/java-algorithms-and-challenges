@@ -1,4 +1,4 @@
-package arrays.highestElement;
+package algorithms.arrays._done.highestElement;
 
 import java.util.Scanner;
 

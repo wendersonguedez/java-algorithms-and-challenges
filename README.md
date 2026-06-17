@@ -12,7 +12,7 @@ java-algorithms-and-challenges/
     ├── logic/               # Desafios de lógica e raciocínio algorítmico
     ├── data_structures/     # Implementações do zero: pilhas, filas, listas, árvores, grafos
     └── leetcode/            # Problemas do LeetCode organizados por categoria
-        ├── arrays/
+        ├── algorithms.arrays/
         ├── strings/
         ├── linked_lists/
         ├── trees/
@@ -90,7 +90,7 @@ docker exec -it java-challenges java src/logic/NomeDoDesafio.java
 
 | Repo | Descrição |
 |---|---|
-| [java-engineering-fundamentals](https://github.com/wendersonguedez/java-engineering-fundamentals) | Core Java, OOP, SOLID e fundamentos da linguagem |
+| [java-engineering-algorithms.math](https://github.com/wendersonguedez/java-engineering-fundamentals) | Core Java, OOP, SOLID e fundamentos da linguagem |
 | [task-tracker-cli](https://github.com/wendersonguedez/task-tracker-cli) | Projeto prático: CLI de gerenciamento de tarefas em Java puro |
 | [gallery-plus](https://github.com/wendersonguedez/gallery-plus) | Projeto fullstack em TypeScript com deploy em produção (Railway) |
 

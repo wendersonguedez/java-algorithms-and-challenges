@@ -1,4 +1,4 @@
-package arrays.evenNumbers;
+package algorithms.arrays._done.evenNumbers;
 
 public class EvenNumbers {
     public static void main(String[] args) {
