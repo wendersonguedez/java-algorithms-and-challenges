@@ -1,4 +1,4 @@
-package fundamentals.difference;
+package math.difference;
 
 import java.util.Scanner;
 

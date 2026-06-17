@@ -1,4 +1,4 @@
-package fundamentals.sumOfElements;
+package arrays.sumOfElements;
 
 import java.util.Scanner;
 

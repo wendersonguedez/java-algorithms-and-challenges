@@ -1,4 +1,4 @@
-package fundamentals.negatives;
+package arrays.negatives;
 
 import java.util.Scanner;
 

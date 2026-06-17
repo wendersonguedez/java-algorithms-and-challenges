@@ -1,4 +1,4 @@
-package fundamentals.highestElement;
+package arrays.highestElement;
 
 import java.util.Scanner;
 
